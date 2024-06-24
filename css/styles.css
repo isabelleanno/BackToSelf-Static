@@ -1,0 +1,612 @@
+/* Isabelle Anno
+   6/11/2024
+
+Table of Contents:
+1.) Universal styles across all pages
+2.) Nav bar styles
+
+*/
+
+/*----------------------------------1.) Univeral Styles Across All Pages-----------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+:root {
+  --dark-primary: #1a5b66;
+  --light-primary: #73a29f;
+  --light-background: #f6ecdf;
+  --extra-light-bg: #fff9f2;
+  --brown-background: #9f6449;
+  --tan-txt: #c57c5a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+div.row {
+  padding: 0;
+  margin: 0;
+}
+.mx-6 {
+  margin-left: 6rem !important;
+  margin-right: 6rem !important;
+}
+.my-6 {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+.mt-6 {
+  margin-top: 5rem !important;
+}
+p {
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-family: "Yeseva One", serif;
+}
+.txt-lg {
+  font-size: 3em !important;
+}
+.light {
+  font-weight: 300;
+}
+.medium {
+  font-weight: 500;
+}
+.dark-blue {
+  color: var(--dark-primary);
+}
+.teal {
+  color: var(--light-primary);
+}
+.tan {
+  color: var(--tan-txt);
+}
+.brown {
+  color: var(--brown-background);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+.light-txt {
+  color: var(--light-background);
+}
+div.col-flex {
+  width: 48%;
+}
+/*----------------------------------2.) Navbar and Button Styles-------------------------------------------------*/
+a,
+a.nav-item,
+label.form-label,
+input {
+  font-family: "Raleway", sans-serif;
+  color: var(--dark-primary);
+}
+a.active {
+  color: var(--light-primary) !important;
+}
+a.button,
+button {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-optical-sizing: auto;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  text-wrap: nowrap;
+  background: var(--light-primary);
+  width: 12vw;
+  height: 6vh;
+  text-align: center;
+  align-items: CENTER;
+  justify-content: CENTER;
+  display: FLEX;
+}
+a.button:hover {
+  background: var(--dark-primary);
+  color: white;
+  text-decoration: underline;
+}
+a.btn-brown,
+button.btn-brown {
+  width: 16vw;
+  background: var(--brown-background);
+}
+a.button.btn-tan {
+  background: var(--tan-txt);
+}
+a.btn-brown:hover {
+  background: #6d422e;
+}
+a.brown-link {
+  text-decoration: none;
+  color: var(--brown-background);
+}
+a.brown-link:hover {
+  text-decoration: underline;
+  color: #6d422e;
+}
+button {
+  border: none;
+  border-radius: 6px !important;
+}
+header,
+nav.navbar.navbar-expand-lg {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+#navbarNav > div > a.nav-item.nav-link {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+img.logo {
+  width: 15%;
+}
+
+/*-------------------------------3.) Intro Section---------------------------------------------------*/
+div.left-photo-row {
+  height: 73vh;
+  margin-top: -69vh;
+}
+div.photo-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+img.arch-img {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50ch;
+  border-bottom-right-radius: 12%;
+  border-bottom-left-radius: 12%;
+}
+div.dark-background {
+  background-color: var(--dark-primary);
+  height: 70vh;
+}
+div.light-background {
+  background-color: var(--light-background);
+}
+div.extra-light-bg {
+  background-color: var(--extra-light-bg);
+}
+.trr {
+  border-top-right-radius: 24px;
+}
+.tlr {
+  border-top-left-radius: 24px;
+}
+.photo-spacer > img {
+  align-self: flex-end;
+  width: 400%;
+}
+.left-photo-row > div.col.p-0.overflow-hidden > img {
+  width: 200%;
+}
+
+div.col-1.spacer-col {
+  width: 1%;
+  padding: 0;
+  margin: 0;
+}
+div.col-3.photo-spacer {
+  width: 22%;
+  padding: 0;
+}
+div.left-text-layer {
+  height: 50vh;
+  margin-top: -50vh;
+}
+div.spacer {
+  position: relative;
+  height: 8vw;
+  border-left: 1px solid #949494;
+  margin-left: 7vw;
+  width: 1px;
+  top: 8vh;
+}
+.profile-small {
+  display: none;
+}
+.cards-row {
+  display: block;
+}
+/*---------------------4.) Grow With me & service info sections---------------------------------------------------*/
+
+div.card.h-100 > img.card-img {
+  border-radius: 50ch;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+div.card.h-100 {
+  border: none;
+}
+h3 {
+  font-family: "Yeseva One", serif;
+  color: var(--dark-primary);
+}
+/*---------------------------------5.) Lead from your power section------------------------------------------------*/
+div.right-photo-row {
+  height: 70vh;
+  margin-top: -70vh;
+}
+.right-text-layer {
+  height: 70vh;
+  margin-top: -55vh !important;
+}
+.lotus-background {
+  background: url(../images/lotus.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.vertical-wave {
+  rotate: 270deg;
+}
+#vert-wave {
+  rotate: 180deg;
+}
+img[src="images/your-power.webp"] {
+  position: relative;
+  left: 5vw;
+  top: 2vw;
+}
+div.text-col {
+  flex: 1 0 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+div.text-col > h1,
+div.text-col > p {
+  text-align: end;
+}
+.small-lotus-img {
+  display: none;
+}
+/*-------------------------------6.) More Than Just Your Job Section -----------------------------------------*/
+img.oval-img {
+  border-radius: 20ch;
+  width: 80%;
+  -webkit-box-shadow: 15px 15px 0px 0px rgba(191, 215, 211, 1);
+  -moz-box-shadow: 15px 15px 0px 0px rgba(191, 215, 211, 1);
+  box-shadow: 15px 15px 0px 0px rgba(191, 215, 211, 1);
+}
+div.sect-right {
+  margin: 5rem;
+}
+/*-------------------------------7.) You Can Do this Section -----------------------------------------*/
+.brown-background {
+  background-color: var(--brown-background);
+}
+.sand-bg {
+  background: url(../images/desert-stairs.webp);
+  background-size: cover;
+  height: 70vh;
+  padding: 0;
+  margin: 0;
+}
+img.desert-butterfly {
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50ch;
+  border-bottom-right-radius: 12%;
+  border-bottom-left-radius: 12%;
+}
+div.text-layer-brown {
+  height: 50vh;
+  margin-top: -64vh;
+}
+div.text-brown {
+  margin-right: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.spacer-brown {
+  position: relative;
+  align-self: start;
+  height: 8vw;
+  border-left: 1px solid black;
+  margin-left: 7vw;
+  width: 1px;
+}
+/*-------------------------------8.) Contact Us section -----------------------------------------*/
+.contact-icon {
+  width: 6%;
+}
+.zoom-icon {
+  width: 8%;
+}
+label.form-label {
+  color: var(--tan-txt);
+}
+input.form-control::placeholder {
+  color: var(--tan-txt);
+}
+input.form-control:focus,
+textarea.form-control:focus {
+  color: var(--brown-background);
+  background-color: #fff;
+  border-color: var(--tan-txt);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #9f644959;
+  background: transparent;
+}
+input.form-control,
+textarea.form-control {
+  border: 1px solid var(--brown-background);
+  background: transparent;
+}
+/*About Me page*/
+/*Intro Section*/
+img.horiz-portrait {
+  border-top-left-radius: 30ch;
+  border-bottom-left-radius: 24px;
+  width: 100%;
+  margin-bottom: 5vh;
+  -webkit-box-shadow: 33px 33px 0px 0px rgba(191, 215, 211, 1);
+  -moz-box-shadow: 33px 33px 0px 0px rgba(191, 215, 211, 1);
+  box-shadow: 33px 33px 0px 0px rgba(191, 215, 211, 1);
+}
+body > div > div > div.col.ms-5 > img {
+  position: absolute;
+  left: 0;
+  width: 60%;
+  margin-top: 5vh;
+}
+body > div.wrapper > div:nth-child(1) > div > div.col-4.p-0 > img {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50ch;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.wrapper {
+  position: relative;
+  top: -12vh;
+}
+.butterfly-background {
+  background: url(../images/blue-butterfly.webp);
+  background-size: cover;
+  height: 70vh;
+  padding: 0;
+  margin: 0;
+}
+img.circular-img {
+  border-radius: 50ch;
+  -webkit-box-shadow: -30px 30px 0px 0px rgba(191, 215, 211, 1);
+  -moz-box-shadow: -30px 30px 0px 0px rgba(191, 215, 211, 1);
+  box-shadow: -30px 30px 0px 0px rgba(191, 215, 211, 1);
+  width: 80%;
+}
+img.bullet-point {
+  width: 10px;
+  margin-right: 10px;
+  align-self: center;
+}
+.mesa-sand {
+  background: url(../images/desert-sand.webp);
+  background-size: cover;
+  height: 60vh;
+  padding: 0;
+  margin: 0;
+}
+/*------------------------------------------------.) Footer---------------------------------------------------*/
+/*Keeping footer down at the bottom of the page */
+#grid-container > footer {
+  padding: 1.2rem;
+}
+
+#grid-container > footer {
+  background-color: white;
+}
+/*------------------------------------------------.) Media Queries---------------------------------------------------*/
+
+@media screen and (max-width: 1154px) {
+  .right-text-layer {
+    margin-top: -62vh !important;
+  }
+}
+@media screen and (max-width: 1044px) {
+  div.col-flex {
+    width: 41.66666667% !important;
+  }
+  .cards-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 991px) {
+  img.logo {
+    width: 25%;
+    margin-bottom: auto;
+  }
+  #navbarNav > div > a.nav-item.nav-link {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  a.button {
+    width: 17vw;
+  }
+  .right-spacer {
+    display: none !important;
+  }
+  div.sect-right {
+    margin: 2rem;
+  }
+}
+@media screen and (max-width: 897px) {
+  img.arch-img {
+    display: none;
+  }
+  div.left-text-layer {
+    margin-top: -66vh;
+    margin-bottom: 20vh;
+  }
+  .photo-spacer > img {
+    display: none;
+  }
+  .spacer-col {
+    display: none;
+  }
+  div.col-4.dark-background.trr {
+    background: var(--light-background);
+  }
+  .trr {
+    border-top-right-radius: 0;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+  }
+  .tlr {
+    border-top-left-radius: 0;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+  .profile-small {
+    display: flex;
+  }
+  .arch-img-small {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50ch;
+    border-bottom-right-radius: 12%;
+    border-bottom-left-radius: 12%;
+  }
+  a.button {
+    width: 25vw;
+  }
+  .right-background {
+    background: rgb(246, 236, 223);
+    background: linear-gradient(
+      180deg,
+      rgba(246, 236, 223, 1) 0%,
+      rgba(255, 255, 255, 1) 50%
+    );
+  }
+  div.text-col {
+    flex: auto;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 823px) {
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-section > .my-6 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  div.sect-right {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .circular-img {
+    box-shadow: -15px 15px 0px 0px rgba(191, 215, 211, 1);
+  }
+}
+@media screen and (max-width: 675px) {
+  .left-photo-row {
+    display: none !important;
+  }
+  .cards-row {
+    width: 75%;
+  }
+  .left-text-layer {
+    background-color: var(--light-background);
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    height: auto !important;
+    border-radius: 24px;
+  }
+  .left-background {
+    display: none !important;
+  }
+  .spacer {
+    display: none;
+  }
+  .arch-img-small {
+    width: 100%;
+  }
+  div.row.w-100.left-text-layer > div.col,
+  .col-flex {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  .col-flex {
+    padding-top: 0;
+  }
+  header,
+  nav.navbar.navbar-expand-lg {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .mx-6 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+@media screen and (max-width: 627px) {
+  div.col.lotus-background.tlr {
+    background: var(--dark-primary);
+  }
+  div.text-col {
+    flex: auto;
+    width: 100%;
+    align-items: start;
+    position: relative;
+    top: 5vh;
+  }
+  div.text-col > h1,
+  div.text-col > p {
+    text-align: start;
+  }
+  .small-lotus-img {
+    display: flex;
+    border-radius: 50ch;
+    box-shadow: -15px 15px 0px 0px rgba(191, 215, 211, 1);
+    width: 30%;
+    height: 70%;
+    align-self: end;
+  }
+  .cards-row {
+    width: 100%;
+  }
+  a.button {
+    width: 35vw;
+  }
+  .sect-right {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .oval-img {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    width: 100% !important;
+  }
+}
