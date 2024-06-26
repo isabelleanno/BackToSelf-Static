@@ -79,8 +79,9 @@ h1 {
 .light-txt {
   color: var(--light-background);
 }
-div.col-flex {
-  width: 48%;
+div.col-flex,
+div.col-flex-brown {
+  width: calc(48% - 4vw);
 }
 /*----------------------------------2.) Navbar and Button Styles-------------------------------------------------*/
 a,
@@ -103,7 +104,7 @@ button {
   border-radius: 6px;
   text-wrap: nowrap;
   background: var(--light-primary);
-  width: 12vw;
+  width: 15vw;
   height: 6vh;
   text-align: center;
   align-items: CENTER;
@@ -154,7 +155,7 @@ img.logo {
 /*-------------------------------3.) Intro Section---------------------------------------------------*/
 div.left-photo-row {
   height: 73vh;
-  margin-top: -69vh;
+  margin-top: -70vh;
 }
 div.photo-col {
   display: flex;
@@ -192,6 +193,7 @@ div.extra-light-bg {
 }
 .left-photo-row > div.col.p-0.overflow-hidden > img {
   width: 200%;
+  height: 100%;
 }
 
 div.col-1.spacer-col {
@@ -311,6 +313,7 @@ div.text-layer-brown {
 }
 div.text-brown {
   margin-right: 7rem;
+  margin-top: calc(7vh + 5px);
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -322,6 +325,9 @@ div.text-brown {
   border-left: 1px solid black;
   margin-left: 7vw;
   width: 1px;
+}
+div.col.p-0.overflow-hidden {
+  height: 70vh;
 }
 /*-------------------------------8.) Contact Us section -----------------------------------------*/
 .contact-icon {
@@ -420,6 +426,9 @@ img.bullet-point {
   .right-text-layer {
     margin-top: -62vh !important;
   }
+  div.text-brown {
+    margin-top: 3vh;
+  }
 }
 @media screen and (max-width: 1044px) {
   div.col-flex {
@@ -433,6 +442,7 @@ img.bullet-point {
     width: 50%;
   }
 }
+
 @media screen and (max-width: 991px) {
   img.logo {
     width: 25%;
@@ -450,6 +460,19 @@ img.bullet-point {
   }
   div.sect-right {
     margin: 2rem;
+  }
+}
+@media screen and (max-width: 988px) {
+  div.text-brown {
+    margin-right: 5rem;
+  }
+}
+@media screen and (max-width: 912px) {
+  div.col-flex-brown {
+    width: 37%;
+  }
+  div.spacer-brown {
+    display: none;
   }
 }
 @media screen and (max-width: 897px) {
@@ -520,6 +543,12 @@ img.bullet-point {
     margin-left: 0;
     margin-right: 0;
   }
+  div.col-4.sand-bg {
+    background: var(--brown-background) !important;
+  }
+  div.col-flex-brown {
+    width: 0%;
+  }
 }
 @media screen and (max-width: 767px) {
   .circular-img {
@@ -542,9 +571,10 @@ img.bullet-point {
     height: auto !important;
     border-radius: 24px;
   }
-  .left-background {
+  .left-background-blue {
     display: none !important;
   }
+
   .spacer {
     display: none;
   }
