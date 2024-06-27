@@ -535,9 +535,9 @@ img.bullet-point {
     display: flex;
     flex-direction: column;
   }
-  .contact-section > .my-6 {
-    margin-top: 2rem !important;
-    margin-bottom: 2rem !important;
+  .contact-section > div.col.my-6.d-flex.flex-column.align-items-end {
+    margin-top: -2rem !important;
+    margin-bottom: 4rem !important;
   }
   div.sect-right {
     margin-left: 0;
@@ -559,6 +559,7 @@ img.bullet-point {
   .left-photo-row {
     display: none !important;
   }
+
   .cards-row {
     width: 75%;
   }
@@ -602,6 +603,9 @@ img.bullet-point {
   }
 }
 @media screen and (max-width: 627px) {
+  div.text-brown {
+    margin-right: 2rem;
+  }
   div.col.lotus-background.tlr {
     background: var(--dark-primary);
   }
