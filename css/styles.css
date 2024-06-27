@@ -286,6 +286,10 @@ img.oval-img {
 div.sect-right {
   margin: 5rem;
 }
+/*Infinite Journey Section*/
+img.lotus-infographic {
+  width: 100%;
+}
 /*-------------------------------7.) You Can Do this Section -----------------------------------------*/
 .brown-background {
   background-color: var(--brown-background);
@@ -420,7 +424,11 @@ img.bullet-point {
   background-color: white;
 }
 /*------------------------------------------------.) Media Queries---------------------------------------------------*/
-
+@media screen and (min-width: 1200px) {
+  img.lotus-infographic {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 1154px) {
   .right-text-layer {
     margin-top: -62vh !important;
