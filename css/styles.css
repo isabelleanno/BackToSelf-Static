@@ -222,6 +222,9 @@ div.spacer {
 .cards-row {
   display: block;
 }
+.hello-mobile {
+  display: none;
+}
 /*---------------------4.) Grow With me & service info sections---------------------------------------------------*/
 
 div.card.h-100 > img.card-img {
@@ -563,21 +566,29 @@ img.bullet-point {
   }
 }
 @media screen and (max-width: 675px) {
+  div.col-flex {
+    width: 100% !important;
+  }
   .left-photo-row {
     display: none !important;
   }
-
   .cards-row {
     width: 75%;
   }
   .left-text-layer {
     background-color: var(--light-background);
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     height: auto !important;
     border-radius: 24px;
+  }
+  .hello {
+    display: none;
+  }
+  .hello-mobile {
+    display: block;
   }
   .left-background-blue {
     display: none !important;
@@ -587,7 +598,7 @@ img.bullet-point {
     display: none;
   }
   .arch-img-small {
-    width: 100%;
+    width: 30%;
   }
   div.row.w-100.left-text-layer > div.col,
   .col-flex {
@@ -597,7 +608,7 @@ img.bullet-point {
     padding-bottom: 5vh;
   }
   .col-flex {
-    padding-top: 0;
+    padding-top: 5vh;
   }
   header,
   nav.navbar.navbar-expand-lg {
