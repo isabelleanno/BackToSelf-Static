@@ -362,8 +362,8 @@ textarea.form-control {
   border: 1px solid var(--brown-background);
   background: transparent;
 }
-/*About Me page*/
-/*Intro Section*/
+/*-------------------------------------------------About Me page*/
+/*-------------------------------------------------Intro Section--------------------------------------------*/
 img.horiz-portrait {
   border-top-left-radius: 30ch;
   border-bottom-left-radius: 24px;
@@ -416,6 +416,10 @@ img.bullet-point {
   height: 60vh;
   padding: 0;
   margin: 0;
+}
+div.text-layer-brown-about {
+  height: 50vh;
+  margin-top: -50vh;
 }
 /*------------------------------------------------.) Footer---------------------------------------------------*/
 /*Keeping footer down at the bottom of the page */
