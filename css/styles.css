@@ -244,7 +244,7 @@ div.right-photo-row {
   height: 70vh;
   margin-top: -70vh;
 }
-.right-text-layer {
+.power-text-layer {
   height: 70vh;
   margin-top: -55vh !important;
 }
@@ -421,6 +421,18 @@ div.text-layer-brown-about {
   height: 50vh;
   margin-top: -50vh;
 }
+.right-text-layer {
+  height: 50vh;
+  margin-top: -50vh !important;
+}
+div.row-concepts > div.col,
+div.oty-p {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+div.quote-txt-block {
+  margin: 5rem;
+}
 /*------------------------------------------------.) Footer---------------------------------------------------*/
 /*Keeping footer down at the bottom of the page */
 #grid-container > footer {
@@ -435,11 +447,15 @@ div.text-layer-brown-about {
   img.lotus-infographic {
     width: 70%;
   }
+  img.wave-about {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 1154px) {
-  .right-text-layer {
+  .power-text-layer {
     margin-top: -62vh !important;
   }
+
   div.text-brown {
     margin-top: 3vh;
   }
@@ -488,6 +504,9 @@ div.text-layer-brown-about {
   div.spacer-brown {
     display: none;
   }
+  .circular-img-left-row {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 897px) {
   img.arch-img {
@@ -501,6 +520,10 @@ div.text-layer-brown-about {
     display: none;
   }
   .spacer-col {
+    display: none;
+  }
+  div.col-6.my-5.pe-0,
+  img.wave-about {
     display: none;
   }
   div.col-4.dark-background.trr {
@@ -542,6 +565,33 @@ div.text-layer-brown-about {
   div.text-col {
     flex: auto;
     width: 30%;
+  }
+  div.mesa-sand {
+    background: linear-gradient(#9f6449cb, #9f6449cb),
+      url(../images/desert-sand.webp);
+    background-size: cover;
+  }
+  div.col-flex-brown {
+    display: none;
+  }
+  div.row-concepts {
+    display: flex;
+    flex-direction: column;
+  }
+  div.row-concepts > div.col {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  div.oty-p {
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+  }
+  img.opposite-img {
+    border-bottom-left-radius: 24px !important;
+    border-bottom-right-radius: 24px !important;
+  }
+  div.quote-txt-block {
+    margin: 5rem 1rem;
   }
 }
 @media screen and (max-width: 823px) {
@@ -628,8 +678,13 @@ div.text-layer-brown-about {
   div.text-brown {
     margin-right: 2rem;
   }
-  div.col.lotus-background.tlr {
+  div.col.lotus-background.tlr,
+  div.butterfly-background {
     background: var(--dark-primary);
+  }
+  .right-text-layer {
+    height: 50vh;
+    margin-top: -55vh !important;
   }
   div.text-col {
     flex: auto;
