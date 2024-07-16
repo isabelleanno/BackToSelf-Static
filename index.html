@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!--Isabelle Anno, 6/10/2024 - Dana Ganot Career Coaching "Back To Self" -->
@@ -27,37 +27,67 @@
   </head>
   <body>
     <!--Header/Nav Bar Start vv-->
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <img
-          src="images/logo-1.png"
-          alt="Back To Self Dana Ganot"
-          class="logo"
-        />
-        <div class="col d-flex flex-column align-items-end">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav align-items-center">
-              <a class="nav-item nav-link active" href="index.html">HOME</a>
-              <a class="nav-item nav-link" href="about.html">ABOUT</a>
-              <a class="nav-item nav-link" href="#">CONTACT</a>
-              <a class="nav-item nav-link" href="#">SHOP</a>
-              <a class="button nav-item nav-link px-4" href="#">SIGN UP</a>
-            </div>
+    <div id="top-navigation">
+      <div id="nav-container" class="container m-0 p-0">
+        <div class="row justify-content-end">
+          <div class="col-6 d-flex">
+            <img src="images/logo-1.png" class="logo" alt="" />
+          </div>
+          <div class="col-md-6 d-flex flex-column align-items-end">
+            <nav class="main-menu">
+              <ul
+                class="top-menu d-flex flex-row navigation top-menu justify-content-end list-unstyled"
+              >
+                <li class="menu-item"><a href="index.html">Home</a></li>
+
+                <li class="menu-item menu-item-has-children">
+                  <a href="index.html">About</a>
+
+                  <ul class="sub-menu">
+                    <li class="menu-item">
+                      <a href="single.html">Single post</a>
+                    </li>
+
+                    <li class="menu-item"><a href="index.html">Contact</a></li>
+
+                    <li class="menu-item menu-item-has-children">
+                      <a href="index.html">Blog</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="index.html">Blog</a></li>
+                        <li class="menu-item"><a href="index.html">FAQ</a></li>
+                        <li class="menu-item">
+                          <a href="index.html">Contact</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu-item"><a href="index.html">Contact</a></li>
+                <li class="menu-item special-menu">
+                  <a href="index.html">Join</a>
+                </li>
+              </ul>
+            </nav>
+
+            <button type="button" class="navbar-open">
+              <i class="fa-solid fa-bars"></i>
+            </button>
           </div>
         </div>
-      </nav>
-    </header>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+          <div class="menu-backdrop"></div>
+          <div class="close-btn">
+            <i class="fa-solid fa-x"></i>
+          </div>
+          <nav class="menu-box">
+            <ul class="navigation clearfix"></ul>
+          </nav>
+        </div>
+      </div>
+    </div>
     <!--Header/Nav Bar End ^^ Intro section start vv-->
     <div class="container-fluid m-0 p-0">
       <div class="row w-100 left-background-blue">
@@ -433,6 +463,18 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/1557300bb3.js"
       crossorigin="anonymous"
     ></script>
   </body>
